@@ -21,9 +21,9 @@ class DetailPage extends StatefulWidget {
 class _DetailPageState extends State<DetailPage> {
   _DetailPageState(Data data, PicData strd);
   final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
-  String locationmessage = "80.0466259,12.8247617",
-      addressmessage = "80.0466259,12.8247617",
-      address1message = "Kattankulathur, 603203, Tamil Nadu, India",
+  String locationmessage = "",
+      addressmessage = "",
+      address1message = "",
       s1;
   bool analyzed = true, uploaded = true, isvisible = true;
 
@@ -86,7 +86,7 @@ class _DetailPageState extends State<DetailPage> {
       respons,
     );
     print(afteresult.body);
-    if(afteresult.body.toString()=="Successfully registered!!")
+    if(afteresult.body.toString()=="Successfully registered")
     {
       setState(() {
         registered = "Your complaint has been successfully registered in our database";
@@ -301,7 +301,7 @@ class _DetailPageState extends State<DetailPage> {
             getlocation();
             getadress();
             setState(() {
-              url = "http://aryasekhar0704.pythonanywhere.com/post/" +
+              url = "" +
                   data.txcontroller.text +
                   "/" +
                   datetimestr +
