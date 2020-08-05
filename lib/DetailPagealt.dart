@@ -22,7 +22,7 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
-  String url = "http://aryasekhar0704.pythonanywhere.com/post/"+data.txcontroller.text+ "/" + datetimestr + ".png" +"/" + "80.0466259,12.8247617";
+  String url = "";
 
   _DetailPageState(Data data, PicData strd);
 
