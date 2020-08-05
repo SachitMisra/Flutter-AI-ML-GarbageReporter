@@ -14,7 +14,7 @@ class _HTTPsState extends State<HTTPs> {
   String url = 'https://api.myjson.com/bins/hqcke';
   void post() async {
 var result = await http.post(
-    "https://api.myjson.com/post/akshat@gmail.com/hqcke",
+    "",
 );
 print(result);
 }
