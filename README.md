@@ -1,6 +1,9 @@
-# gdgbloc
+# AI/ML Based Garbage Reporter (Smart India Hackathon Project)
 
-A new Flutter project.
+A flutter mobile application for reporting garbage, potholes and stray cattle.
+The user clicks a picture of either of the above problems and if detected, the problem is reported and further action can be taken by authorities.
+
+The application sends the picture over the server which runs a trained model on python to detect the image. 
 
 ## Getting Started
 
